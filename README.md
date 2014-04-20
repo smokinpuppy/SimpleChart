@@ -9,134 +9,135 @@ Usage:
 
 Include in Head Tag:
 
-&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt; &lt;/script&gt;
+    &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt; &lt;/script&gt;
 
-&lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt; &lt;/script&gt;
+    &lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt; &lt;/script&gt;
 
-&lt;script type="text/javascript" src="js/jquery.SimpleChart.js"&gt; &lt;/script&gt;
+    &lt;script type="text/javascript" src="js/jquery.SimpleChart.js"&gt; &lt;/script&gt;
 
 
 JavaScript / jQuery:
 
-$('#demo1').SimpleChart({
-    lineWidth: 2,				// Chart Line Width
+    $('#demo1').SimpleChart({
 	
-	strokeColor: "#333",		// Axis Lines Color
+    	lineWidth: 2,				// Chart Line Width
 	
-	borderColor: "#333",		// Border Color
+		strokeColor: "#333",		// Axis Lines Color
 	
-	borderWidth: 3,				// Border Width
+		borderColor: "#333",		// Border Color
 	
-	backgroundColor: "#FFF",	// Background color of chart
+		borderWidth: 3,				// Border Width
 	
-	backgroundImg: "css/jquery.SimpleChart/monthly_grid.png", // Background Image for chart (i.e Grid Layout)
+		backgroundColor: "#FFF",	// Background color of chart
 	
-	data: data,					// Default plot
+		backgroundImg: "css/jquery.SimpleChart/monthly_grid.png", // Background Image for chart (i.e Grid Layout)
 	
-	title: "Simple Chart",		// Default Title of chart
+		data: data,					// Default plot
 	
-	titleFontSize: 16,			// Title Font size
+		title: "Simple Chart",		// Default Title of chart
 	
-	titleColor: "#FFF",			// Title Color
+		titleFontSize: 16,			// Title Font size
 	
-	showTitle: true,			// If True show title
+		titleColor: "#FFF",			// Title Color
 	
-	titleBGColor: '#006',		// Title Background Color
+		showTitle: true,			// If True show title
 	
-	xTitle: "",					// Title of X Axis
+		titleBGColor: '#006',		// Title Background Color
 	
-	yTitle: "",					// Title of Y Axis
+		xTitle: "",					// Title of X Axis
 	
-	xTitleBGColor: '#006',		// Title X Axis background Color
+		yTitle: "",					// Title of Y Axis
 	
-	yTitleBGColor: '#006',		// Title Y Axis background Color
+		xTitleBGColor: '#006',		// Title X Axis background Color
 	
-	xFontSize: 16,				// X Axis Title Font Size
+		yTitleBGColor: '#006',		// Title Y Axis background Color
 	
-	yFontSize: 16, 				// Y Axis Title Font Size
+		xFontSize: 16,				// X Axis Title Font Size
 	
-	xTitleColor: "#000",		// X Axis Title Color
+		yFontSize: 16, 				// Y Axis Title Font Size
 	
-	yTitleColor: "#000",		// Y Axis Title Color
+		xTitleColor: "#000",		// X Axis Title Color
 	
-	maxValX: 12,				// Maximum value of data XAxis
+		yTitleColor: "#000",		// Y Axis Title Color
 	
-	maxValY: 100,				// Maximum value of data YAxis
+		maxValX: 12,				// Maximum value of data XAxis
 	
-	width: 500,					// Width of Graph
+		maxValY: 100,				// Maximum value of data YAxis
 	
-	height: 300,				// Height of Graph
+		width: 500,					// Width of Graph
 	
-	margin: 10,					// Margin between each graph
+		height: 300,				// Height of Graph
 	
-	showKey: true,				// Show chart key
+		margin: 10,					// Margin between each graph
 	
-	toolTip: ''					// If set, this will use jQuery Tooltip
+		showKey: true,				// Show chart key
 	
-});
+		toolTip: ''					// If set, this will use jQuery Tooltip
+	
+    });
 
 Data(JavaScript):
 
-var data = [
+    var data = [
 
-	{
+		{
 	
-		values:[						// Array of Plot Values
+			values:[						// Array of Plot Values
 		
-			{
+				{
 			
-				X:5,					// X Coordinate of Point 1
+					X:5,					// X Coordinate of Point 1
 				
-				Y:50					// Y Coordinate of Point 1
+					Y:50					// Y Coordinate of Point 1
 				
-			},{
+				},{
 			
-				X:10,					// X Coordinate of Point 2
+					X:10,					// X Coordinate of Point 2
 				
-				Y:100					// Y Coordinate of Point 2
+					Y:100					// Y Coordinate of Point 2
 				
-			}							// And So on
+				}							// And So on
 			
-		],
+			],
 		
-		color:"red",					// Color of the Line and Point
+			color:"red",					// Color of the Line and Point
 		
-		title:"Red Color",				// Title of the line for the chart key
+			title:"Red Color",				// Title of the line for the chart key
 		
-		action: "alert('Red Color');"	// Action if key is Clicked
+			action: "alert('Red Color');"	// Action if key is Clicked
 		
-	},{
+		},{
 	
-		values:[
+			values:[
 		
-			{
+				{
 			
-				X:1,
+					X:1,
 				
-				Y:60
+					Y:60
 				
-			},{
+				},{
 			
-				X:6,
+					X:6,
 				
-				Y:70
+					Y:70
 				
-			}
+				}
 			
-		],
+			],
 		
-		color:"blue",
+			color:"blue",
 		
-		title:"Blue Color",
+			title:"Blue Color",
 		
-		action: "alert('Blue Color');"
+			action: "alert('Blue Color');"
 		
-	}
+		}
 	
-];
+	];
 
 
 
 HTML:
 
-&lt;div id="demo1" &gt;&lt;/div&gt; 
+    &lt;div id="demo1" &gt;&lt;/div&gt; 
