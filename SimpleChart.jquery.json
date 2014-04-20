@@ -1,0 +1,48 @@
+{
+  "author": {
+	  "name":"Robert Haddad (SmokinPuppy)",
+	  "email": "rha2180@yahoo.com"
+  },
+  "title": "jQuery SimpleChart",
+  "name": "SimpleChart",
+  "version": "1.0.0",
+  "keywords": [
+        "Chart",
+        "Data",
+        "graph",
+        "ui",
+		"canvas",
+		"plot",
+		"plots",
+		"simple",
+		"context",
+		"html5"
+    ],
+  "main": [
+  	"demo.html",
+    "js/jquery.SimpleChart.js",
+	"images/weekly_grid.png",
+	"images/monthly_grid.png"
+  ],
+  "description": "Small jQuery Plugin to display a Chart of Plotted Data",
+  "repository": {
+        "type": "git",
+        "url": "git://github.com/smokinpuppy/SimpleChart.git"
+   },
+  "homepage": "http://smokinpuppy.github.io/SimpleChart/",
+  "download": "https://github.com/smokinpuppy/SimpleChart/archive/master.zip",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "ignore": [
+  ],
+  "dependencies": {
+	  "jquery": ">=2.0",
+	  "jquery-ui": ">=1.9.2"
+  },
+  "devDependencies": {
+  }
+}
