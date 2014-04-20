@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SimpleChart Demo</title>
+<link rel="stylesheet" href="css/BarGauge/jquery.BarGauge.css" type="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.SimpleChart.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	var data = [{
+	values:[
+		{X:0,Y:10},
+		{X:1,Y:60},
+		{X:2,Y:70},
+		{X:3,Y:30},
+		{X:4,Y:90}
+	],
+	color:"red",
+	title:"Red Color",
+	action:"alert('Red Line');"
+	},{
+		values:[
+			{X:0,Y:0},
+			{X:1,Y:10},
+			{X:1.5,Y:20},
+			{X:2,Y:30},
+			{X:2.5,Y:43},
+			{X:3,Y:55},
+			{X:3.5,Y:75},
+			{X:4,Y:85}
+		],
+		color:"blue",
+		title:"Blue Color",
+		action:"alert('Blue Line');"
+	}];
+	$('#demo1').SimpleChart({
+			backgroundImg: "images/weekly_grid.png",
+			data:data,
+			maxValX: 4,				// Maximum value of data XAxis
+			maxValY: 100,				// Maximum value of data YAxis
+	});	
+});
+</script>
+</head>
+
+<body>
+<div id="content">
+<h2>Usage:</h2>
+
+	<h3>Include in Head Tag</h3><code>
+    &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;<br />
+	 &lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js">&lt;/script&gt;<br />
+	 &lt;script type="text/javascript" src="js/jquery.SimpleChart.js">&lt;/script&gt;<br /></code>
+	<h3>JavaScript / jQuery</h3>
+    <code>
+	$('#demo1').SimpleChart({<br />
+    		lineWidth: 2,				// Chart Line Width<br />
+    		strokeColor: "#333",		// Axis Lines Color<br />
+    		borderColor: "#333",		// Border Color<br />
+    		borderWidth: 3,				// Border Width<br />
+    		backgroundColor: "#FFF",	// Background color of chart<br />
+    		backgroundImg: "css/jquery.SimpleChart/monthly_grid.png", // Background Image for chart (i.e Grid Layout)<br />
+    		data: data,					// Default plot<br />
+    		title: "Simple Chart",		// Default Title of chart<br />
+    		titleFontSize: 16,			// Title Font size<br />
+    		titleColor: "#FFF",			// Title Color<br />
+    		showTitle: true,			// If True show title<br />
+    		titleBGColor: '#006',		// Title Background Color<br />
+    		xTitle: "",				    // Title of X Axis<br />
+    		yTitle: "",					// Title of Y Axis<br />
+    		xTitleBGColor: '#006',		// Title X Axis background Color<br />
+    		yTitleBGColor: '#006',		// Title Y Axis background Color<br />
+    		xFontSize: 16,				// X Axis Title Font Size<br />
+    		yFontSize: 16, 				// Y Axis Title Font Size<br />
+    		xTitleColor: "#000",		// X Axis Title Color<br />
+    		yTitleColor: "#000",		// Y Axis Title Color<br />
+    		maxValX: 12,				// Maximum value of data XAxis<br />
+    		maxValY: 100,				// Maximum value of data YAxis<br />
+    		width: 500,					// Width of Graph<br />
+    		height: 300,				// Height of Graph<br />
+    		margin: 10,					// Margin between each graph<br />
+    		showKey: true,				// Show chart key<br />
+    		toolTip: ''					// If set, this will use jQuery Tooltip<br />
+
+	});
+  	</code>
+  	<h3>HTML</h3>
+    <code>
+    &lt;div id="demo1" style="position:relative"&gt;&lt;/div&gt;
+	</code>
+</div>
+<h2>Demo</h2>
+<div id="demo1" style="position:relative"></div>
+</body>
+</html>
