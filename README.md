@@ -9,11 +9,11 @@ Usage:
 
 Include in Head Tag:
 
-    &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt; &lt;/script&gt;
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    &lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt; &lt;/script&gt;
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
 
-    &lt;script type="text/javascript" src="js/jquery.SimpleChart.js"&gt; &lt;/script&gt;
+    <script type="text/javascript" src="js/jquery.SimpleChart.js"></script>
 
 
 JavaScript / jQuery:
@@ -140,4 +140,4 @@ Data(JavaScript):
 
 HTML:
 
-    &lt;div id="demo1" &gt;&lt;/div&gt; 
+    <div id="demo1"></div> 
